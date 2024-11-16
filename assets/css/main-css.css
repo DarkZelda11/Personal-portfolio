@@ -1,0 +1,105 @@
+/* Reset and Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F1E9D2; /* Light Sand */
+    color: #000000; /* Black */
+    line-height: 1.6;
+}
+
+/* Header - Mobile First */
+header {
+    background-color: #A3B8A7; /* Soft Sage Green */
+    padding: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column; /* Stacked navigation for mobile */
+    gap: 1rem; /* Space between items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center align for mobile */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #1A4D7D; /* Deep Blue */
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #FF6B6B; /* Warm Coral */
+    color: #FFFFFF; /* White */
+}
+
+/* Main Content - Mobile First */
+main {
+    padding: 1rem;
+}
+
+main section {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #A3B8A7; /* Soft Sage Green */
+    border-radius: 8px;
+    text-align: center; /* Center content for mobile */
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main section h4 {
+    font-size: 1.2rem;
+    color: #1A4D7D; /* Deep Blue */
+    margin-bottom: 0.5rem;
+}
+
+main section img {
+    width: 100%;
+    max-width: 400px; /* Limit image size for mobile */
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+/* Footer - Mobile First */
+footer {
+    background-color: #1A4D7D; /* Deep Blue */
+    color: #FFFFFF; /* White */
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+}
+
+/* Desktop / Laptop Layout Enhancements */
+@media (min-width: 768px) {
+    header nav ul {
+        flex-direction: row; /* Horizontal navigation for larger screens */
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto; /* Center main content */
+    }
+
+    main section {
+        display: flex;
+        justify-content: space-between; /* Align image and text side by side */
+        text-align: left; /* Left-align content for desktop */
+        padding: 2rem;
+    }
+
+    main section img {
+        width: 40%; /* Shrink image size for desktop */
+        margin: 0;
+    }
+
+    footer {
+        font-size: 1rem; /* Larger footer text for desktop */
+    }
+}
