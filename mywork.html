@@ -22,67 +22,33 @@
 
     <!-- Main Content -->
     <main>
-        <h1>Sample Projects</h1>
-        <p>Here are detailed descriptions of my top five GitHub repositories, highlighting their features and impact:</p>
+        <h1>API Interface</h1>
 
-        <section id="sample-projects">
-            <!-- Project 1 -->
-            <div class="project">
-                <h2>Text Based Game</h2>
-                <a href="https://github.com/" target="_blank">View on GitHub</a>
-                <p>
-                    A comprehensive description of the project, including its purpose, key features, challenges faced,
-                    and how it stands out.
-                </p>
-                <img src="https://placehold.co/600x400/1A4D7D/FF6B6B?text=Project+1&font=montserrat" alt="Project 1 Screenshot">
+        <!-- Form for API selection -->
+        <form id="apiForm">
+            <div>
+                <input type="checkbox" id="riddles" name="api" value="riddles">
+                <label for="riddles">Get a riddle</label>
             </div>
 
-            <!-- Project 2 -->
-            <div class="project">
-                <h2>Mobile Application</h2>
-                <a href="https://github.com/" target="_blank">View on GitHub</a>
-                <p>
-                    A detailed breakdown of this project’s goals, functionality, and the technologies used to bring it to life.
-                </p>
-                <img src="https://placehold.co/600x400/1A4D7D/FF6B6B?text=Project+2&font=montserrat" alt="Project 2 Screenshot">
+            <div>
+                <input type="checkbox" id="passwordgenerator" name="api" value="passwordgenerator">
+                <label for="passwordgenerator">Generate Password</label>
             </div>
 
-            <!-- Project 3 -->
-            <div class="project">
-                <h2>Personal Portfolio</h2>
-                <a href="https://github.com/" target="_blank">View on GitHub</a>
-                <p>
-                    An in-depth explanation of how this project solves a problem or provides value,
-                    and its key contributions.
-                </p>
-                <img src="https://placehold.co/600x400/1A4D7D/FF6B6B?text=Project+3&font=montserrat" alt="Project 3 Screenshot">
-            </div>
+            <button type="submit">Submit</button>
+        </form>
 
-            <!-- Project 4 -->
-            <div class="project">
-                <h2>WPF Application</h2>
-                <a href="https://github.com/" target="_blank">View on GitHub</a>
-                <p>
-                    Details about this project, including your approach, technologies, and achievements.
-                </p>
-                <img src="https://placehold.co/600x400/1A4D7D/FF6B6B?text=Project+4&font=montserrat" alt="Project 4 Screenshot">
-            </div>
-
-            <!-- Project 5 -->
-            <div class="project">
-                <h2>Project Picker</h2>
-                <a href="https://github.com/" target="_blank">View on GitHub</a>
-                <p>
-                    A summary of the project’s significance, any feedback or results, and the skills demonstrated.
-                </p>
-                <img src="https://placehold.co/600x400/1A4D7D/FF6B6B?text=Project+5&font=montserrat" alt="Project 5 Screenshot">
-            </div>
-        </section>
+        <!-- Response area -->
+        <div id="responseArea"></div>
     </main>
 
     <!-- Footer -->
     <footer>
         <p>@ Copyright 2024 Alexander Manning. All Rights Reserved.</p>
     </footer>
+
+    <!-- Link to Javascript file -->
+    <script src="assets/js/mainjsfiles/api.js"></script>
 </body>
 </html>
